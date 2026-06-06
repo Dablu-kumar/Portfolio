@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dablu Kumar | Full Stack & Software Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Dablu Kumar, Full Stack & Software Developer. Specializing in Python, Java, JavaScript, Angular, FastAPI, and Machine Learning.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="Dablu Kumar Logo">
+                <span class="logo-accent">&lt;</span>Dablu<span class="logo-accent">.K /&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Light/Dark Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#contact" class="btn btn-outline nav-cta-btn">Hire Me</a>
+                <button class="hamburger-menu" id="hamburger" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-blobs">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Welcome to my universe</span>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Dablu Kumar</span>
+                    </h1>
+                    <h2 class="hero-role">Full Stack & Software Developer</h2>
+                    <p class="hero-description">
+                        An ambitious developer passionate about building scalable web applications, secure decentralized systems, and smart predictive models. I translate complex ideas into clean, functional code.
+                    </p>
+                    
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/Dablu-kumar?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dablu-kumar-67b929292/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:dablukumardk809@gmail.com" aria-label="Email Address">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="tel:+917209769220" aria-label="Phone Number">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="visual-glowing-orbit">
+                        <div class="orbit-circle circle-1">
+                            <i class="fa-brands fa-python orbit-icon"></i>
+                        </div>
+                        <div class="orbit-circle circle-2">
+                            <i class="fa-brands fa-angular orbit-icon"></i>
+                        </div>
+                        <div class="orbit-circle circle-3">
+                            <i class="fa-brands fa-js orbit-icon"></i>
+                        </div>
+                        <div class="orbit-circle circle-4">
+                            <i class="fa-brands fa-java orbit-icon"></i>
+                        </div>
+                        
+                        <!-- Center Profile Image -->
+                        <div class="profile-image-container">
+                            <img src="profile.jpg" alt="Dablu Kumar" class="hero-profile-img">
+                        </div>
+                    </div>
+
+                    <div class="visual-terminal-card glass-card">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">dablu@desktop:~</span>
+                        </div>
+                        <div class="terminal-body" id="terminal-body">
+                            <div class="terminal-line output">Welcome to my terminal! Type <span class="text-gradient font-bold">help</span> to begin.</div>
+                            <div class="terminal-input-line">
+                                <span class="terminal-prompt">dablu@desktop:~$</span>
+                                <input type="text" id="terminal-input" autocomplete="off" aria-label="Terminal command input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                    <p class="section-subtitle">My education background and professional journey</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info glass-card">
+                        <h3>Who I Am</h3>
+                        <p>
+                            I am a Bachelor's graduate (passed out in 2026) from Bihar Engineering University (BEU), Patna. Over the course of my academic career, I have immersed myself in software engineering principles, algorithms, and full-stack development methodologies.
+                        </p>
+                        <p>
+                            I love problem solving and software architecture. Whether it's designing highly efficient RESTful APIs, securing applications with cryptographic protocols, or implementing machine learning classifiers, I focus on performance, scalability, and code maintainability.
+                        </p>
+                        <div class="about-stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">200+</span>
+                                <span class="stat-label">Leetcode / GFG Solved</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">7.6</span>
+                                <span class="stat-label">BEU CGPA</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Years Coding</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-details">
+                        <!-- Education Card -->
+                        <div class="detail-card glass-card">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Education</h3>
+                                <div class="timeline-item">
+                                    <h4 class="timeline-title">Bachelor of Technology</h4>
+                                    <span class="timeline-meta">Bihar Engineering University (BEU), Patna</span>
+                                    <span class="timeline-date">2022 - 2026</span>
+                                    <p class="timeline-desc">Academic focus on Data Structures, Algorithms, Software Engineering, and Database Management. Passed out in 2026 with a CGPA of 7.6/10.0.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Achievements / Certifications Card -->
+                        <div class="detail-card glass-card">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Certifications & Achievements</h3>
+                                <ul class="achievements-list">
+                                    <li>
+                                        <i class="fa-solid fa-certificate achievement-bullet"></i>
+                                        <div>
+                                            <strong>Full Stack Web Development (MERN Stack)</strong>
+                                            <span class="achievement-meta">Apna College &bull; July 2025</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-certificate achievement-bullet"></i>
+                                        <div>
+                                            <strong>Data Structures & Algorithms with Java</strong>
+                                            <span class="achievement-meta">Apna College &bull; July 2024</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-code achievement-bullet"></i>
+                                        <div>
+                                            <strong>Problem Solving Milestone</strong>
+                                            <span class="achievement-meta">Solved 200+ DSA problems on LeetCode and GeeksforGeeks.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
+                    <p class="section-subtitle">The technologies and tools I specialize in</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skill-category-card glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code category-icon"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-tag">Java</span></li>
+                            <li><span class="skill-tag">Python</span></li>
+                            <li><span class="skill-tag">C / C++</span></li>
+                            <li><span class="skill-tag">JavaScript</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="skill-category-card glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-laptop-code category-icon"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-tag">HTML5</span></li>
+                            <li><span class="skill-tag">CSS3</span></li>
+                            <li><span class="skill-tag">Angular</span></li>
+                            <li><span class="skill-tag">Bootstrap</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-category-card glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-server category-icon"></i>
+                            <h3>Backend</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-tag">Node.js</span></li>
+                            <li><span class="skill-tag">Express.js</span></li>
+                            <li><span class="skill-tag">FastAPI</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="skill-category-card glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-database category-icon"></i>
+                            <h3>Databases</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-tag">MongoDB</span></li>
+                            <li><span class="skill-tag">MySQL</span></li>
+                            <li><span class="skill-tag">SQLite</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- ML & Data -->
+                    <div class="skill-category-card glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-brain category-icon"></i>
+                            <h3>ML & Data</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-tag">Pandas</span></li>
+                            <li><span class="skill-tag">NumPy</span></li>
+                            <li><span class="skill-tag">Scikit-learn</span></li>
+                            <li><span class="skill-tag">Matplotlib</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Core Concepts & Tools -->
+                    <div class="skill-category-card glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-gears category-icon"></i>
+                            <h3>Tools & Concepts</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-tag">Git & GitHub</span></li>
+                            <li><span class="skill-tag">OOPs</span></li>
+                            <li><span class="skill-tag">DSA</span></li>
+                            <li><span class="skill-tag">REST APIs</span></li>
+                            <li><span class="skill-tag">MVC Architecture</span></li>
+                            <li><span class="skill-tag">Blockchain</span></li>
+                            <li><span class="skill-tag">SHA-256</span></li>
+                            <li><span class="skill-tag">Authentication</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Work <span class="text-gradient">Experience</span></h2>
+                    <p class="section-subtitle">My professional internships and industry practice</p>
+                </div>
+
+                <div class="experience-timeline">
+                    <!-- Timeline Card -->
+                    <div class="experience-card glass-card">
+                        <div class="exp-badge">Internship</div>
+                        <div class="exp-header">
+                            <div class="exp-role-company">
+                                <h3 class="exp-role">Salesforce Developer Intern</h3>
+                                <span class="exp-company">Salesforce (Virtual Internship)</span>
+                            </div>
+                            <span class="exp-duration">Dec 2023 – Jan 2024</span>
+                        </div>
+                        <ul class="exp-details">
+                            <li>
+                                <i class="fa-solid fa-circle-check exp-bullet"></i>
+                                <span>Developed Apex classes and triggers for custom business logic implementation.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check exp-bullet"></i>
+                                <span>Automated workflows using Process Builder and Salesforce automation tools.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check exp-bullet"></i>
+                                <span>Designed Lightning Components and Visualforce pages for enhanced UI.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check exp-bullet"></i>
+                                <span>Improved process efficiency through optimized Salesforce configurations.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Featured <span class="text-gradient">Projects</span></h2>
+                    <p class="section-subtitle">A collection of systems I've engineered and deployed</p>
+                </div>
+
+                <!-- Projects Filter Bar -->
+                <div class="projects-filter-bar">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend & UI</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                    <button class="filter-btn" data-filter="blockchain">Blockchain</button>
+                    <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: AuraRing Smart Wearable -->
+                    <article class="project-card glass-card" data-category="frontend">
+                        <div class="project-badge">Frontend / Interactive</div>
+                        <div class="project-content">
+                            <h3 class="project-title">AuraRing - Smart Wearable Landing Page</h3>
+                            <p class="project-description">
+                                A high-end, responsive landing page for an AI-powered smart ring. Designed to showcase advanced product features, custom finishes, and specifications.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Developed a 4-step interactive configuration pre-order modal (Finish -> Size -> Checkout -> Success receipt).</li>
+                                <li>Created dynamic finish selectors (Stealth Black, Nebula Glow, Matte Silver, Rose Gold) that live-update product mockups.</li>
+                                <li>Implemented a responsive 3-tab specifications panel separating materials, sensors, and connectivity metrics.</li>
+                                <li>Engineered glassmorphic aesthetics, keyframe glowing effects, and responsive mobile drawer navigation.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Dablu-kumar/AuraRing.git" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View AuraRing GitHub Code">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="https://dablu-kumar.github.io/AuraRing/" target="_blank" rel="noopener noreferrer" class="project-link link-secondary" aria-label="View AuraRing Live Demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card glass-card" data-category="fullstack">
+                        <div class="project-badge">Full Stack</div>
+                        <div class="project-content">
+                            <h3 class="project-title">Full Stack Issue Tracker System</h3>
+                            <p class="project-description">
+                                A highly scalable application designed to track and manage software bugs, tasks, and project workflows seamlessly. Built with a fast-performance backend and responsive frontend.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Designed RESTful APIs with filtering, pagination, and sorting.</li>
+                                <li>Implemented a modular, maintainable, and clean architecture.</li>
+                                <li>Developed a dynamic frontend with search, filters, and CRUD operations.</li>
+                                <li>Optimized database queries to improve backend response times.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">Angular</span>
+                                <span class="tag">SQLite</span>
+                                <span class="tag">REST API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Dablu-kumar?tab=repositories" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Issue Tracker GitHub Code">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="https://dablu-issue-tracker.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link link-secondary" aria-label="View Issue Tracker Live Demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card glass-card" data-category="blockchain">
+                        <div class="project-badge">Blockchain / Desktop</div>
+                        <div class="project-content">
+                            <h3 class="project-title">Blockchain Voting Management System</h3>
+                            <p class="project-description">
+                                A tamper-proof decentralized electronic voting system engineered to guarantee absolute data integrity, immutability, and transparent validation.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Integrated secure SHA-256 cryptographic hashing for immutable blocks.</li>
+                                <li>Developed unique voter ID validation to prevent duplicate voting.</li>
+                                <li>Implemented real-time block validation to detect unauthorized tampering.</li>
+                                <li>Created a responsive, interactive graphical UI using Tkinter.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Cryptography</span>
+                                <span class="tag">Tkinter</span>
+                                <span class="tag">Blockchain</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Dablu-kumar?tab=repositories" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Blockchain Voting GitHub Code">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="https://github.com/Dablu-kumar" target="_blank" rel="noopener noreferrer" class="project-link link-secondary" aria-label="View Blockchain Voting Live Demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card glass-card" data-category="ml">
+                        <div class="project-badge">Machine Learning</div>
+                        <div class="project-content">
+                            <h3 class="project-title">Heart Disease Prediction Web App</h3>
+                            <p class="project-description">
+                                An intelligent web tool utilizing machine learning classification models to evaluate medical metrics and predict heart condition probability.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Implemented data preprocessing, engineering, and model validation.</li>
+                                <li>Achieved high model prediction accuracy using classification algorithms.</li>
+                                <li>Integrated Scikit-learn model with a lightweight Flask web backend.</li>
+                                <li>Developed clean file upload functionality for medical report analysis.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag">Flask</span>
+                                <span class="tag">Scikit-learn</span>
+                                <span class="tag">Pandas</span>
+                                <span class="tag">Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Dablu-kumar?tab=repositories" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Heart Disease Prediction GitHub Code">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="https://heartcare-ai-8noi.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link link-secondary" aria-label="View Heart Disease Prediction Live Demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+                    <p class="section-subtitle">Let's discuss how we can work together</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info glass-card">
+                        <h3>Contact Information</h3>
+                        <p>Have an exciting project, job opening, or want to discuss technical concepts? Drop a message, and let's build something awesome!</p>
+                        
+                        <ul class="contact-details-list">
+                            <li>
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span class="info-label">Email Me</span>
+                                    <a href="mailto:dablukumardk809@gmail.com" class="info-link">dablukumardk809@gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span class="info-label">Call Me</span>
+                                    <a href="tel:+917209769220" class="info-link">+91 7209769220</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span class="info-label">Location</span>
+                                    <span class="info-val">Patna, Bihar, India</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="contact-socials-wrapper">
+                            <span>Connect on Socials</span>
+                            <div class="social-links-grid">
+                                <a href="https://github.com/Dablu-kumar?tab=repositories" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/dablu-kumar-67b929292/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper glass-card">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="user-name">Your Name</label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-user input-icon"></i>
+                                        <input type="text" id="user-name" name="name" placeholder="Your Name" required aria-label="Enter your name">
+                                    </div>
+                                    <span class="error-msg" id="name-error">Name is required</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="user-email">Your Email</label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-envelope input-icon"></i>
+                                        <input type="email" id="user-email" name="email" placeholder="abc@gmail.com" required aria-label="Enter your email address">
+                                    </div>
+                                    <span class="error-msg" id="email-error">Please enter a valid email</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-subject">Subject</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-pen-to-square input-icon"></i>
+                                    <input type="text" id="user-subject" name="subject" placeholder="Project Inquiry / Job Opportunity" required aria-label="Enter the email subject">
+                                </div>
+                                <span class="error-msg" id="subject-error">Subject is required</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-message">Message</label>
+                                <div class="input-wrapper">
+                                    <textarea id="user-message" name="message" rows="5" placeholder="Tell me about your project or role details..." required aria-label="Enter your message"></textarea>
+                                </div>
+                                <span class="error-msg" id="message-error">Message must be at least 10 characters long</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+
+                            <div class="form-status" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#home" class="logo">
+                    <span class="logo-accent">&lt;</span>Dablu<span class="logo-accent">.K /&gt;</span>
+                </a>
+                <p class="footer-text">&copy; 2026 Dablu Kumar. All rights reserved. Crafted with precision.</p>
+            </div>
+            
+            <div class="footer-right">
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div class="project-modal" id="project-modal" aria-hidden="true" role="dialog">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-wrapper glass-card">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modal-content">
+                <!-- Content populated dynamically via script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
